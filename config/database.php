@@ -90,6 +90,21 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
+        'qbdesktop' => [
+            'driver' => env('DB_CONNECTION_QBDESKTOP','mysql'),
+            'host' => env('DB_HOST_QBDESKTOP', '127.0.0.1'),
+            'port' => env('DB_PORT_QBDESKTOP', '3306'),
+            'database' => env('DB_DATABASE_QBDESKTOP', 'forge'),
+            'username' => env('DB_USERNAME_QBDESKTOP', 'forge'),
+            'password' => env('DB_PASSWORD_QBDESKTOP', ''),
+            'unix_socket' => env('DB_SOCKET_QBDESKTOP', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+        ],
 
     ],
 

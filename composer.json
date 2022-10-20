@@ -4,13 +4,23 @@
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://www.setasign.com/downloads/"
+        },
+        { "name": "ocw/quickbooks",  "type": "vcs", "url": "https://bitbucket.org/tylerajeesh/quickbooks.git" },
+        { "name": "ocw/laravel-qbd",  "type": "vcs", "url": "https://bitbucket.org/tylerajeesh/laravel-qbd.git" }
+    ],
     "require": {
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "ocw/laravel-qbd": "^1.4",
+        "ocw/quickbooks": "^1.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
